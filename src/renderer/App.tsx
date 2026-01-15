@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import './App.css';
+import icon from '../../assets/icon.png';
 
 // Types
 interface EmulatorInfo {
@@ -411,11 +412,6 @@ export default function App() {
   );
   const [toasts, setToasts] = useState<Toast[]>([]);
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
-  const [iconPath, setIconPath] = useState<string>('');
-
-  useEffect(() => {
-    window.emulator.getAssetPath('icon.png').then(setIconPath);
-  }, []);
 
   const showToast = useCallback(
     (message: string, type: 'success' | 'error') => {
@@ -568,7 +564,7 @@ export default function App() {
       {/* Header */}
       <header className="header">
         <div className="header__left">
-          <img src={iconPath} alt="EmuManager" className="header__logo" />
+          <img src={icon} alt="EmuManager" className="header__logo" />
           <h1 className="header__title">EmuManager</h1>
         </div>
         <div className="header__right">
