@@ -1,5 +1,6 @@
 {
   "name": "emumanager",
+  "version": "0.0.1",
   "description": "Android Emulator Manager - Manage and launch Android emulators",
   "keywords": [
     "android",
