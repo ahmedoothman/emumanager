@@ -70,7 +70,7 @@
 - Fix #2402
 - Simplify configs (https://github.com/electron-react-boilerplate/electron-react-boilerplate/pull/2406)
 
-# 1.0.4
+# 1.0.5
 
 - Migrate to TypeScript from Flow ([#2363](https://github.com/electron-react-boilerplate/electron-react-boilerplate/pull/2363))
 - Use browserslist for `@babel/preset-env` targets ([#2368](https://github.com/electron-react-boilerplate/electron-react-boilerplate/pull/2368))
